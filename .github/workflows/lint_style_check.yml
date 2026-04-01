@@ -23,8 +23,7 @@ jobs:
       uses: per1234/artistic-style-action@v1
       with:
           options-file-path: 'astyle.ini'
-          target-paths:
-            - "./${{ matrix.task }}/"
+          target-paths: "- ./${{ matrix.task }}/"
           name-patterns: |
             - '*.cpp'
             - '*.h'
